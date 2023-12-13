@@ -1,4 +1,3 @@
-// JavaScript code
 document.addEventListener('DOMContentLoaded', function () {
     // Function to reset the typing animation after 10 seconds
     function resetTypingAnimation() {
@@ -6,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
         typingText.style.animation = 'none';  // Remove the current animation
         void typingText.offsetWidth;  // Trigger reflow
         typingText.style.animation = null;  // Reset the animation
-        setTimeout(startTypingAnimation, 10000);  // Start the animation again after 10 seconds
+        setTimeout(startTypingAnimation, 1000);  // Start the animation again after 10 seconds
     }
 
     // Function to start the typing animation
@@ -16,6 +15,6 @@ document.addEventListener('DOMContentLoaded', function () {
         setTimeout(resetTypingAnimation, 3000);  // Reset the animation after it completes
     }
 
-    // Initial start of the typing animation
-    startTypingAnimation();
+    // Initial start of the typing animation with a delay of 3 seconds
+    setTimeout(startTypingAnimation, 3000);
 });
