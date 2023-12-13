@@ -23,8 +23,11 @@ body {
 
 
 .typing-container {
-  text-align: top; /* Align text to the left */
+  position: absolute;
+  top: 0;
+  left: 10;
 }
+
 
 .typing-text {
   font-size: 50px;
